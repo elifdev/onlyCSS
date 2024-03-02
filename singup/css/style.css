@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(164, 165, 165);
+}
+
+.container {
+  margin: 0 auto;
+  width: 300px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  background-color:white;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+.cards {
+    
+   background-color: white;
+   width: 200px;
+   display: flex;
+   top: 50px;
+   position: absolute;
+   transition: 0.6s;
+}
+
+.cards img {
+  width: 250px;
+  height: 160px;
+  right: 20px;
+  position: relative;
+  
+}
+
+input[type="radio"] {
+  display: none ;
+}
+
+.cards .card input {
+  width: 200px;
+  height: 30px;
+  border: 3px solid lightgray;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+  color: lightgray;
+  margin-top: 20px;
+}
+
+.cards .card h6 {
+  color: rgb(177, 176, 176);
+  padding-left: 50px;
+
+}
+
+.cards .card h3 {
+  padding-left: 50px;
+}
+.cards .card .singup {
+  width: 200px;
+  height: 30px;
+  background: rgb(87, 23, 170);
+  border: 3px solid rgb(87, 23, 170);
+  border-radius: 5px;
+  color: lightgrey;
+  margin-top: 18px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cards .card #login1 {
+  display: none;
+}
+
+.dots {
+   display: flex;
+
+}
+
+.dots label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid rgb(208, 187, 212);
+  background-color: rgb(208, 187, 212);
+  position: relative;
+  top: 320px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.15s ease-out ;
+}
+
+label:hover {
+  background-color: rgb(87, 23, 170);
+
+}
+
+.dots label:checked label{
+  background-color: rgb(87, 23, 170);
+}
+
+/*
+#card-1:checked ~ .card1 {
+  margin-left: 0;
+}
+#card-2:checked ~ .card1 {
+  display: none;
+}
+
+#card-2:checked ~ .card2 {
+  margin-left: -0px;
+}
+
+#card-3:checked ~ .card2 {
+  display: none;
+}
+
+#card-3:checked ~ .card3 {
+   margin-left: -100px;
+}
+*/
+
+.card1 , .card2 , .card3 {
+  display: none;
+}
+
+#card-1:checked ~ .card1 ,
+#card-2:checked ~ .card2 ,
+#card-3:checked ~ .card3 {
+  display: block;
+}
+
+label:checked + label {
+  background-color: rgb(87, 23, 170);
+}
+
+  
+
+
+
+
+
+
+
